@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="articles.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    .position_box {
+      background-color: Gold;
+    }
+
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Marketing Game</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li class="active"><a>Articles</a></li>
+        <li><a href="plan.html">Marketing Plan</a></li>
+        <li><a href="#section3">Meet with CEO</a></li>
+        <li><a href="scorecard.html">Scorecard</a></li>
+        <li><a href="#section3">Settings</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <h2>Marketing Game</h2>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li class="active"><a>Articles</a></li>
+        <li><a href="plan.html">Marketing Plan</a></li>
+        <li><a href="#section3">Meet with CEO</a></li>
+        <li><a href="scorecard.html">Scorecard</a></li>
+        <li><a href="#section3">Settings</a></li>
+      </ul>
+    </div>
+    <br>
+
+    <div class="col-sm-9">
+      <div class="well">
+        <h2>Articles</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3 sidenav" style="padding-top: 20px; background-color: #fff;">
+          <ul id="article-navbar" class="nav nav-pills nav-stacked text-center"></ul>
+        </div>
+        <div id="article-container" class="col-sm-9 text-justify"></div>
+      </div>
+
+      <div class="well">
+        <h2>Rank the Articles</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 text-justify">
+          <p>Drag and drop the items in the below list to rank the articles according to how relevant they are to your marketing strategy. The top of the list is the most relevant and the bottom of the list is the least relevant. Press submit when finished.</p>
+        </div>
+        <div class="col-sm-3"></div>
+        <div id="current-rank" class="col-sm-6 text-center"></div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-12">
+          <div class="well" style="height:160px">
+            <ul id="article-list" class="list-group sortable text-center"></ul>
+          </div>
+          <button class="btn btn-primary" onclick="submitArticles()">Submit</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

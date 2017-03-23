@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="dashboard.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    .position_box {
+      background-color: Gold;
+    }
+
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Marketing Game</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a>Dashboard</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="plan.html">Marketing Plan</a></li>
+        <li><a href="#section3">Meet with CEO</a></li>
+        <li><a href="scorecard.html">Scorecard</a></li>
+        <li><a href="#section3">Settings</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <h2>Marketing Game</h2>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a>Dashboard</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="plan.html">Marketing Plan</a></li>
+        <li><a href="#section3">Meet with CEO</a></li>
+        <li><a href="scorecard.html">Scorecard</a></li>
+        <li><a href="#section3">Settings</a></li>
+      </ul><br>
+    </div>
+    <br>
+
+    <div class="col-sm-9">
+      <div class="well">
+        <h2>Dashboard</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <div class="well position_box text-center">
+            <h4>Position</h4>
+            <h1>1</h1>
+            <h4>Score: 10763</h4>
+          </div>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="well">
+            <h4>Operating profit</h4>
+            <div class="progress">
+              <div class="progress-bar" role="operating-profit-bar" aria-valuenow="508000" aria-valuemin="0" aria-valuemax="600000" style="width:85%; color:black;">€508,000</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="well">
+            <h4>Market share men</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="market-share-men-bar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="20" style="width:100%; color:black;">20%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+            <h4>Brand awareness men</h4>
+            <div class="progress" style="position: relative">
+              <div class="progress-bar progress-bar-danger" role="brand-awareness-men-bar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width:12%; color:black;">12%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="well">
+            <h4>Quarter 1: 7Ps of Marketing</h4>
+            <p>Text describing the lesson that will be taught during this quarter.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="well">
+            <h4>Next Rollover:</h4>
+            <h1>25th March 2017, 09:00</h1>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="well">
+            <h2>Market Information</h2>
+            <p>These infographics are based on the total jeanswear market in your marketplace.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="infographic.png" class="img-responsive"/>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
