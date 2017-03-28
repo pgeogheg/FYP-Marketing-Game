@@ -1,0 +1,84 @@
+{
+  "players": [
+    {
+      "id": 0,
+      "name": "Player 1",
+      "score": "0",
+      "articleRanks[]": [
+        "Alphabet",
+        "Latin",
+        "Numbers"
+      ],
+      "decisions": {
+        "kpis": [0, 3, 5],
+        "market": {
+          "measure": 740006,
+          "access": 59205,
+          "subtance": 465312,
+          "different": 40,
+          "action": 35
+        },
+        "positioning": {
+          "price_m": 0,
+          "price_f": 0,
+          "quality_m": 0,
+          "quality_f": 0
+        },
+        "product": {
+          "quality_m": 45,
+          "quality_f": 45,
+          "improvements_m": [],
+          "improvements_f": []
+        },
+        "price": {
+          "sell_m": 160,
+          "sell_f": 160
+        },
+        "promotion": {
+          "message_m": [],
+          "message_f": []
+        },
+        "place": {
+          "phy_dist": [],
+          "onl_dist": [],
+          "stock_m": 10000,
+          "stock_f": 10000
+        },
+        "people": {
+          "training_bud": 6000
+        },
+        "process": {
+          "service_m": 1000,
+          "service_f": 1000
+        },
+        "physical_environment": {
+          "decor_m": 10000,
+          "decor_f": 10000
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "Player 2",
+      "score": 0,
+      "articleRanks[]": []
+    }
+  ],
+  "articles": [
+    {
+      "id": 0,
+      "title": "Alphabet",
+      "contents": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    },
+    {
+      "id": 1,
+      "title": "Numbers",
+      "contents": "0123456789"
+    },
+    {
+      "id": 2,
+      "title": "Latin",
+      "contents": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  ]
+}

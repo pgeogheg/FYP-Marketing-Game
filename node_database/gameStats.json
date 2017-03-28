@@ -8,7 +8,46 @@
         "Alphabet",
         "Latin",
         "Numbers"
-      ]
+      ],
+      "decisions[kpis][]": [
+        "0",
+        "1",
+        "2"
+      ],
+      "decisions[positioning][price_m]": "1",
+      "decisions[positioning][price_f]": "2",
+      "decisions[positioning][quality_m]": "2",
+      "decisions[positioning][quality_f]": "2",
+      "decisions[product][quality_m]": "30",
+      "decisions[product][quality_f]": "60",
+      "decisions[price][sell_m]": "100",
+      "decisions[price][sell_f]": "150",
+      "decisions[people][training_bud]": "6000",
+      "decisions[process][service_m]": "2500",
+      "decisions[process][service_f]": "5000",
+      "decisions[physical_environment][decor_m]": "10000",
+      "decisions[physical_environment][decor_f]": "10000",
+      "decisions[product][improvements_m][]": "8",
+      "decisions[product][improvements_f][]": "18",
+      "decisions[promotion][message_m][]": [
+        "1",
+        "3"
+      ],
+      "decisions[promotion][message_f][]": [
+        "4",
+        "5"
+      ],
+      "scorecard[sales_revenue]": "1215000",
+      "scorecard[gross_margin]": "55",
+      "scorecard[operating_profit]": "508000",
+      "scorecard[market_share_men]": "20",
+      "scorecard[market_share_women]": "19",
+      "scorecard[brand_awareness_men]": "12",
+      "scorecard[brand_awareness_women]": "12",
+      "scorecard[brand_image_men]": "92",
+      "scorecard[brand_image_women]": "60",
+      "scorecard[brand_loyalty_men]": "50",
+      "scorecard[brand_loyalty_women]": "50"
     },
     {
       "id": 1,
@@ -19,19 +58,19 @@
   ],
   "articles": [
     {
-      "id" : 0,
-      "title" : "Alphabet",
-      "contents" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      "id": 0,
+      "title": "Alphabet",
+      "contents": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     },
     {
-      "id" : 1,
-      "title" : "Numbers",
-      "contents" : "0123456789"
+      "id": 1,
+      "title": "Numbers",
+      "contents": "0123456789"
     },
     {
-      "id" : 2,
-      "title" : "Latin",
-      "contents" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "id": 2,
+      "title": "Latin",
+      "contents": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     }
   ]
 }

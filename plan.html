@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="node_database/node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css">
+  <link rel="stylesheet" href="https://bootswatch.com/sandstone/bootstrap.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
@@ -19,16 +20,16 @@
 
     /* Set gray background color and 100% height */
     .sidenav {
-      background-color: #f1f1f1;
       height: 100%;
-    }
-
-    .position_box {
-      background-color: Gold;
     }
 
     .slider-selection {
 	    background: #BABABA;
+    }
+
+    th input {
+      height: 20px;
+      width: 20px;
     }
 
     /* On small screens, set height to 'auto' for the grid */
@@ -71,22 +72,343 @@
 
 <div class="container-fluid">
   <div class="row content">
+    
     <div class="col-sm-3 sidenav hidden-xs">
-      <h2>Marketing Game</h2>
-      <ul class="nav nav-pills nav-stacked">
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li class="active"><a href="#section2">Marketing Plan</a></li>
-        <li><a href="#section3">Meet with CEO</a></li>
-        <li><a href="scorecard.html">Scorecard</a></li>
-        <li><a href="#section3">Settings</a></li>
-      </ul><br>
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Marketing Game</h2>
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li class="active"><a href="#section2">Marketing Plan</a></li>
+            <li><a href="#section3">Meet with CEO</a></li>
+            <li><a href="scorecard.html">Scorecard</a></li>
+            <li><a href="#section3">Settings</a></li>
+          </ul><br>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              Marketing Objective
+            </div>
+            <div class="panel-body">
+              Increase Market Awareness for Men by 2%
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <br>
 
     <div class="col-sm-9">
       <div class="well">
         <h2>Marketing Plan</h2>
+      </div>
+
+      <!--
+      KPIs
+      -->
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3>Key Performance Indicators</h3>
+        </div>
+        <div class="panel-body">
+          <div>
+            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#kpi-body"></button>
+          </div>
+          <div id="kpi-body" class="collapse">
+            <div class="container fluid">
+
+              <div class="row">
+                <div class="container fluid">
+                  <div class="row">
+                    <div class="table-responsive">
+                      <table id="kpis" class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th class="col-sm-2 text-center"></th>
+                            <th class="col-sm-10 text-center">Name</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-3" value="0" checked/></th>
+                            <th>Operating Profit</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-3" value="1" /></th>
+                            <th>Sales Revenue</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-3" value="2" /></th>
+                            <th>Gross Margin</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-3" value="3" checked/></th>
+                            <th>Market Share Men</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-3" value="4" /></th>
+                            <th>Market Share Women</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-3" value="5" checked/></th>
+                            <th>Brand Awareness Men</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-3" value="6" /></th>
+                            <th>Brand Awareness Women</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-3" value="7" /></th>
+                            <th>Brand Image Men</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-3" value="8" /></th>
+                            <th>Brand Image Women</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-3" value="9" /></th>
+                            <th>Brand Loyalty Men</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-3" value="10" /></th>
+                            <th>Brand Loyalty Women</th>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      TARGET MARKET
+      -->
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3>Target Market</h3>
+        </div>
+        <div class="panel-body">
+          <div>
+            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#tarmar-body"></button>
+          </div>
+          <div id="tarmar-body" class="collapse">
+            <div class="container fluid">
+
+              <div class="row">
+                <div class="container fluid">
+                  <div class="row">
+                    <h3>Target Market - Men</h3>
+                    <div class="panel panel-info">
+                      <div class="panel-body">
+                        <p>Aged between 17 - 24 years.</p>
+                        <p>Earning €10k - €25k a year.</p>
+                        <p>The target market's psychographic profile is thinker/believer, achiever/striver, experiencer/maker, innovator or survivor.</p>
+                        <p>The target market perceives the main benefit as derived from purchase as economy.</p>
+                        <p>They are early adopters, followers or indifferent with regard to fashion.</p>
+                        <p>The target market is non-user, ex-user, potential user, first time user, or regular user.</p>
+                        <p>Their loyalty status is hard-core, split, shifting or switcher.</p>
+                        <p>They are light, medium or heavy users.</p>
+                      </div>
+
+                      <div class="panel-body">
+                        <table class="table table-hover">
+                          <tbody>
+                            <tr>
+                              <th class="col-sm-6">Measureability</th>
+                              <th class="col-sm-6">740,006 people</th>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">Accessibility</th>
+                              <th class="col-sm-6">59,205 people</th>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">Substantiability</th>
+                              <th class="col-sm-6">€465,312 potential turnover</th>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">Differentiability</th>
+                              <th class="col-sm-6">40%</th>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">Actionability</th>
+                              <th class="col-sm-6">35%</th>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="container fluid">
+                  <div class="row">
+                    <h3>Target Market - Women</h3>
+                    <div class="panel panel-info">
+                      <div class="panel-body">
+                        <p>Aged between 17 - 24 years.</p>
+                        <p>Earning €10k - €25k a year.</p>
+                        <p>The target market's psychographic profile is thinker/believer, achiever/striver, experiencer/maker, innovator or survivor.</p>
+                        <p>The target market perceives the main benefit as derived from purchase as economy.</p>
+                        <p>They are early adopters, followers or indifferent with regard to fashion.</p>
+                        <p>The target market is non-user, ex-user, potential user, first time user, or regular user.</p>
+                        <p>Their loyalty status is hard-core, split, shifting or switcher.</p>
+                        <p>They are light, medium or heavy users.</p>
+                      </div>
+
+                      <div class="panel-body">
+                        <table class="table table-hover">
+                          <tbody>
+                            <tr>
+                              <th class="col-sm-6">Measureability</th>
+                              <th class="col-sm-6">740,006 people</th>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">Accessibility</th>
+                              <th class="col-sm-6">59,205 people</th>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">Substantiability</th>
+                              <th class="col-sm-6">€465,312 potential turnover</th>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">Differentiability</th>
+                              <th class="col-sm-6">40%</th>
+                            </tr>
+                            <tr>
+                              <th class="col-sm-6">Actionability</th>
+                              <th class="col-sm-6">35%</th>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      POSITIONING
+      -->
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3>Positioning</h3>
+        </div>
+        <div class="panel-body">
+          <div>
+            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#position-body"></button>
+          </div>
+          <div id="position-body" class="collapse">
+            <div class="container fluid">
+
+              <div class="row">
+                <div class="container fluid">
+                  <div class="row">
+                    <h3>Brand Positioning - Men</h3>
+
+                    <div class="table-responsive">
+                      <table id="positioning_m" class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th class="col-sm-2"></th>
+                            <th class="col-sm-4 text-center">Price</th>
+                            <th class="col-sm-2"></th>
+                            <th class="col-sm-4 text-center">Quality</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="text-center"><input type="radio" name="position-price-men-radio" value="0" checked></th>
+                            <th>Low Price</th>
+                            <th class="text-center"><input type="radio" name="position-quality-men-radio" value="0" checked></th>
+                            <th>Low Quality</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="radio" name="position-price-men-radio" value="1"></th>
+                            <th>Medium Price</th>
+                            <th class="text-center"><input type="radio" name="position-quality-men-radio" value="1"></th>
+                            <th>Medium Quality</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="radio" name="position-price-men-radio" value="2"></th>
+                            <th>High Price</th>
+                            <th class="text-center"><input type="radio" name="position-quality-men-radio" value="2"></th>
+                            <th>High Quality</th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="container fluid">
+                  <div class="row">
+                    <h3>Brand Positioning - Women</h3>
+
+                    <div class="table-responsive">
+                      <table id="positioning_f" class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th class="col-sm-2"></th>
+                            <th class="col-sm-4 text-center">Price</th>
+                            <th class="col-sm-2"></th>
+                            <th class="col-sm-4 text-center">Quality</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="text-center"><input type="radio" name="position-price-women-radio" value="0" checked></th>
+                            <th>Low Price</th>
+                            <th class="text-center"><input type="radio" name="position-quality-women-radio" value="0" checked></th>
+                            <th>Low Quality</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="radio" name="position-price-women-radio" value="1"></th>
+                            <th>Medium Price</th>
+                            <th class="text-center"><input type="radio" name="position-quality-women-radio" value="1"></th>
+                            <th>Medium Quality</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="radio" name="position-price-women-radio" value="2"></th>
+                            <th>High Price</th>
+                            <th class="text-center"><input type="radio" name="position-quality-women-radio" value="2"></th>
+                            <th>High Quality</th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
 
       <!--
@@ -108,95 +430,124 @@
                 <div class="container fluid">
                   <div class="row">
                     <h3>Quality - Men</h3>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-sm-2 text-center">
-                      <b>Low Quality (€10) </b>
-                    </div>
-
-                    <div class="col-sm-5 text-center">
-                      <input id="quality-men" data-slider-id='quality-men-slider' type="text" data-slider-min="10" data-slider-max="80" data-slider-step="1" data-slider-value="45"/>
-                    </div>
-
-                    <div class="col-sm-2 text-center">
-                      <b>High Quality (€80) </b>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-sm-5 col-sm-offset-2 text-center">
-                      Current value: €<span id="quality-men-val">45</span>
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th class="col-sm-2 text-center">Low Quality</th>
+                            <th class="col-sm-8 text-center">Current value: <label id="quality-men-val">45</label></th>
+                            <th class="col-sm-2 text-center">High Quality</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="text-center">€10</th>
+                            <th class="text-center"><input id="quality-men" data-slider-id='quality-men-slider' type="text" data-slider-min="10" data-slider-max="80" data-slider-step="5" data-slider-value="45"/></th>
+                            <th class="text-center">€80</th>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
-
               </div>
 
               <div class="row">
                 <div class="container fluid">
                   <div class="row">
                     <h3>Quality - Women</h3>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-sm-2 text-center">
-                      <b>Low Quality (€10) </b>
-                    </div>
-
-                    <div class="col-sm-5 text-center">
-                      <input id="quality-women" data-slider-id='quality-women-slider' type="text" data-slider-min="10" data-slider-max="80" data-slider-step="1" data-slider-value="45"/>
-                    </div>
-
-                    <div class="col-sm-2 text-center">
-                      <b>High Quality (€80) </b>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-sm-5 col-sm-offset-2 text-center">
-                      Current value: €<span id="quality-women-val">45</span>
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th class="col-sm-2 text-center">Low Quality</th>
+                            <th class="col-sm-8 text-center">Current value: <label id="quality-women-val">45</label></th>
+                            <th class="col-sm-2 text-center">High Quality</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="text-center">€10</th>
+                            <th class="text-center"><input id="quality-women" data-slider-id='quality-women-slider' type="text" data-slider-min="10" data-slider-max="80" data-slider-step="5" data-slider-value="45"/></th>
+                            <th class="text-center">€80</th>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
-
               </div>
 
               <div class="row">
-                <h3>Quality improvements - Men</h3>
-                <label>
-                  <input type="checkbox" data-toggle="toggle"/>
-                  Eco-friendly denim - manufacturing costs (18%)
-                </label>
-                <br />
-                <label>
-                  <input type="checkbox" data-toggle="toggle"/>
-                  Stronger materials - manufacturing costs (10%)
-                </label>
-                <br />
-                <label>
-                  <input type="checkbox" data-toggle="toggle"/>
-                  Double stitching and multiple belt loops - manufacturing costs (8%)
-                </label>
+                <div class="container fluid">
+                  <div class="row">
+                    <h3>Quality improvements - Men</h3>
+                    <div class="table-responsive">
+                      <table id="improvements_m" class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th class="col-sm-2 text-center"></th>
+                            <th class="col-sm-8 text-center">Name</th>
+                            <th class="col-sm-2 text-center">Manufacturing Costs</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" data-toggle="toggle" value="18"/></th>
+                            <th><label>Eco-friendly denim</label></th>
+                            <th class="text-center">18%</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" data-toggle="toggle" value="10"/></th>
+                            <th><label>Stronger materials</label></th>
+                            <th class="text-center">10%</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" data-toggle="toggle" value="8"/></th>
+                            <th><label>Double stitching and multiple belt loops</label></th>
+                            <th class="text-center">8%</th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="row">
-                <h3>Quality improvements - Women</h3>
-                <label>
-                  <input type="checkbox" data-toggle="toggle"/>
-                  Eco-friendly denim - manufacturing costs (18%)
-                </label>
-                <br />
-                <label>
-                  <input type="checkbox" data-toggle="toggle"/>
-                  Stronger materials - manufacturing costs (10%)
-                </label>
-                <br />
-                <label>
-                  <input type="checkbox" data-toggle="toggle"/>
-                  Double stitching and multiple belt loops - manufacturing costs (8%)
-                </label>
-                <br />
+                <div class="container fluid">
+                  <div class="row">
+                    <h3>Quality improvements - Women</h3>
+                    <div class="table-responsive">
+                      <table id="improvements_f" class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th class="col-sm-2 text-center"></th>
+                            <th class="col-sm-8 text-center">Name</th>
+                            <th class="col-sm-2 text-center">Manufacturing Costs</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" data-toggle="toggle" value="18"/></th>
+                            <th><label>Eco-friendly denim</label></th>
+                            <th class="text-center">18%</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" data-toggle="toggle" value="10"/></th>
+                            <th><label>Stronger materials</label></th>
+                            <th class="text-center">10%</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" data-toggle="toggle" value="8"/></th>
+                            <th><label>Double stitching and multiple belt loops</label></th>
+                            <th class="text-center">8%</th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -222,56 +573,53 @@
                 <div class="container fluid">
                   <div class="row">
                     <h3>Selling Price - Men</h3>
-                  </div>
 
-                  <div class="row">
-                    <div class="col-sm-2 text-center">
-                      <b>€30</b>
-                    </div>
-
-                    <div class="col-sm-5 text-center">
-                      <input id="price-men" data-slider-id='price-men-slider' type="text" data-slider-min="30" data-slider-max="300" data-slider-step="1" data-slider-value="45"/>
-                    </div>
-
-                    <div class="col-sm-2 text-center">
-                      <b>€300</b>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-sm-5 col-sm-offset-2 text-center">
-                      Current price: €<span id="price-men-val">45</span>
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th class="col-sm-2 text-center">Min</th>
+                            <th class="col-sm-8 text-center">Current value: <label id="price-men-val">160</label></th>
+                            <th class="col-sm-2 text-center">Max</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="text-center">€30</th>
+                            <th class="text-center"><input id="price-men" data-slider-id='price-men-slider' type="text" data-slider-min="30" data-slider-max="300" data-slider-step="10" data-slider-value="160"/></th>
+                            <th class="text-center">€300</th>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
-
               </div>
 
               <div class="row">
                 <div class="container fluid">
                   <div class="row">
                     <h3>Selling Price - Women</h3>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-sm-2 text-center">
-                      <b>€30 </b>
-                    </div>
-
-                    <div class="col-sm-5 text-center">
-                      <input id="price-women" data-slider-id='price-women-slider' type="text" data-slider-min="30" data-slider-max="300" data-slider-step="1" data-slider-value="45"/>
-                    </div>
-
-                    <div class="col-sm-2 text-center">
-                      <b>€300 </b>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-sm-5 col-sm-offset-2 text-center">
-                      Current price: €<span id="price-women-val">45</span>
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th class="col-sm-2 text-center">Min</th>
+                            <th class="col-sm-8 text-center">Current value: <label id="price-women-val">160</label></th>
+                            <th class="col-sm-2 text-center">Max</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="text-center">€30</th>
+                            <th class="text-center"><input id="price-women" data-slider-id='price-women-slider' type="text" data-slider-min="30" data-slider-max="300" data-slider-step="10" data-slider-value="160"/></th>
+                            <th class="text-center">€300</th>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -301,13 +649,43 @@
                   </div>
 
                   <div class="row">
-                    <div class="checkbox">
-                      <label class="checkbox-inline max-2-0"><input type="checkbox" value="" />Fun</label>
-                      <label class="checkbox-inline max-2-0"><input type="checkbox" value="" />Durable</label>
-                      <label class="checkbox-inline max-2-0"><input type="checkbox" value="" />Sporty</label>
-                      <label class="checkbox-inline max-2-0"><input type="checkbox" value="" />Fashionable</label>
-                      <label class="checkbox-inline max-2-0"><input type="checkbox" value="" />Cheap</label>
-                      <label class="checkbox-inline max-2-0"><input type="checkbox" value="" />Designer</label>
+                    <label>Pick max two</label>
+                    <div class="table-responsive">
+                      <table id="message_m" class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th class="col-sm-2 text-center"></th>
+                            <th class="col-sm-10 text-center">Name</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-2-0" value="0" /></th>
+                            <th>Fun</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-2-0" value="1" /></th>
+                            <th>Durable</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-2-0" value="2" /></th>
+                            <th>Sporty</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-2-0" value="3" /></th>
+                            <th>Fashionable</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-2-0" value="4" /></th>
+                            <th>Cheap</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-2-0" value="5" /></th>
+                            <th>Designer</th>
+                          </tr>
+
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
@@ -320,13 +698,43 @@
                   </div>
 
                   <div class="row">
-                    <div class="checkbox">
-                      <label class="checkbox-inline max-2-1"><input type="checkbox" value="" />Fun</label>
-                      <label class="checkbox-inline max-2-1"><input type="checkbox" value="" />Durable</label>
-                      <label class="checkbox-inline max-2-1"><input type="checkbox" value="" />Sporty</label>
-                      <label class="checkbox-inline max-2-1"><input type="checkbox" value="" />Fashionable</label>
-                      <label class="checkbox-inline max-2-1"><input type="checkbox" value="" />Cheap</label>
-                      <label class="checkbox-inline max-2-1"><input type="checkbox" value="" />Designer</label>
+                    <label>Pick max two</label>
+                    <div class="table-responsive">
+                      <table id="message_f" class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th class="col-sm-2 text-center"></th>
+                            <th class="col-sm-10 text-center">Name</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-2-1" value="0" /></th>
+                            <th>Fun</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-2-1" value="1" /></th>
+                            <th>Durable</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-2-1" value="2" /></th>
+                            <th>Sporty</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-2-1" value="3" /></th>
+                            <th>Fashionable</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-2-1" value="4" /></th>
+                            <th>Cheap</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center"><input type="checkbox" class="max-2-1" value="5" /></th>
+                            <th>Designer</th>
+                          </tr>
+
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
@@ -349,207 +757,151 @@
             <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#place-body"></button>
           </div>
           <div id="place-body" class="collapse row">
-            <div class="container fluid">
+            <div class="container">
 
               <div class="row">
                 <div class="col-sm-12">
                   <h3>Physical distribution</h3>
 
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th></th>
-                        <th>Name</th>
-                        <th>Cost</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th><input type="checkbox" data-toggle="toggle"/></th>
-                        <th><label>Large shop in urban or high street area.</label></th>
-                        <th>€25,000</th>
-                      </tr>
+                  <div class="table-responsive">
+                    <table id="phy_dist" class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th class="col-sm-2 text-center"></th>
+                          <th class="col-sm-8 text-center">Name</th>
+                          <th class="col-sm-2 text-center">Cost</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="text-center"><input type="checkbox" data-toggle="toggle" value="25000"/></th>
+                          <th><label>Large shop in urban or high street area.</label></th>
+                          <th class="text-center">€25,000</th>
+                        </tr>
 
-                      <tr>
-                        <th><input type="checkbox" data-toggle="toggle" /></th>
-                        <th><label>Within a high-market department store as a concession brand</label></th>
-                        <th>€20,000</th>
-                      </tr>
-                    </tbody>
-                  </table>
+                        <tr>
+                          <th class="text-center"><input type="checkbox" data-toggle="toggle" value="20000"/></th>
+                          <th><label>Within a high-market department store as a concession brand</label></th>
+                          <th class="text-center">€20,000</th>
+                        </tr>
 
-                  <div class="row">
-                    <div class="col-sm-2">
-                      <input type="checkbox" data-toggle="toggle" />
-                    </div>
+                        <tr>
+                          <th class="text-center"><input type="checkbox" data-toggle="toggle" value="19000"/></th>
+                          <th><label>Small luxurious boutique in urban or high street area</label></th>
+                          <th class="text-center">€19,000</th>
+                        </tr>
 
-                    <div class="col-sm-8">
-                      <label>Small luxurious boutique in urban or high street area</label>
-                    </div>
+                        <tr>
+                          <th class="text-center"><input type="checkbox" data-toggle="toggle" value="15000"/></th>
+                          <th><label>Within a medium- or low-market department store as a concession brand</label></th>
+                          <th class="text-center">€15,000</th>
+                        </tr>
 
-                    <div class="col-sm-2">
-                      €19,000
-                    </div>
+                        <tr>
+                          <th class="text-center"><input type="checkbox" data-toggle="toggle" value="10000"/></th>
+                          <th><label>Small shop in suburban area</label></th>
+                          <th class="text-center">€10,000</th>
+                        </tr>
+
+                        <tr>
+                          <th class="text-center"><input type="checkbox" data-toggle="toggle" value="6000"/></th>
+                          <th><label>Small shop in rural area</label></th>
+                          <th class="text-center">€6,000</th>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-
-                  <br />
-
-                  <div class="row">
-                    <div class="col-sm-2">
-                      <input type="checkbox" data-toggle="toggle" />
-                    </div>
-
-                    <div class="col-sm-8">
-                      <label>Within a medium- or low-market department store as a concession brand</label>
-                    </div>
-
-                    <div class="col-sm-2">
-                      €15,000
-                    </div>
-                  </div>
-
-                  <br />
-
-                  <div class="row">
-                    <div class="col-sm-2">
-                      <input type="checkbox" data-toggle="toggle" />
-                    </div>
-
-                    <div class="col-sm-8">
-                      <label>Small shop in suburban area</label>
-                    </div>
-
-                    <div class="col-sm-2">
-                      €10,000
-                    </div>
-                  </div>
-
-                  <br />
-
-                  <div class="row">
-                    <div class="col-sm-2">
-                      <input type="checkbox" data-toggle="toggle" />
-                    </div>
-
-                    <div class="col-sm-8">
-                      <label>Small shop in rural area</label>
-                    </div>
-
-                    <div class="col-sm-2">
-                      €6,000
-                    </div>
-                  </div>
-
-                  <br />
-
                 </div>
-
-                <br />
               </div>
 
               <div class="row">
                 <div class="col-sm-12">
                   <h3>Online distribution</h3>
 
-                  <div class="row">
-                    <div class="col-sm-2">
-                      <input type="checkbox" data-toggle="toggle"/>
-                    </div>
+                  <div class="table-responsive">
+                    <table id="onl_dist" class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th class="col-sm-2 text-center"></th>
+                          <th class="col-sm-8 text-center">Name</th>
+                          <th class="col-sm-2 text-center">Cost</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="text-center"><input type="checkbox" data-toggle="toggle" value="8000"/></th>
+                          <th><label>Own online shop</label></th>
+                          <th class="text-center">€8,000</th>
+                        </tr>
 
-                    <div class="col-sm-8">
-                      <label>Large shop in urban or high street area.</label>
-                    </div>
+                        <tr>
+                          <th class="text-center"><input type="checkbox" data-toggle="toggle" value="4000"/></th>
+                          <th><label>Large online retailer</label></th>
+                          <th class="text-center">€4,000</th>
+                        </tr>
 
-                    <div class="col-sm-2">
-                      €25,000
-                    </div>
+                        <tr>
+                          <th class="text-center"><input type="checkbox" data-toggle="toggle" value="2000"/></th>
+                          <th><label>Medium online retailer</label></th>
+                          <th class="text-center">€2,000</th>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-
-                  <br />
-
-                  <div class="row">
-                    <div class="col-sm-2">
-                      <input type="checkbox" data-toggle="toggle" />
-                    </div>
-
-                    <div class="col-sm-8">
-                      <label>Within a high-market department store as a concession brand</label>
-                    </div>
-
-                    <div class="col-sm-2">
-                      €20,000
-                    </div>
-                  </div>
-
-                  <br />
-
-                  <div class="row">
-                    <div class="col-sm-2">
-                      <input type="checkbox" data-toggle="toggle" />
-                    </div>
-
-                    <div class="col-sm-8">
-                      <label>Small luxurious boutique in urban or high street area</label>
-                    </div>
-
-                    <div class="col-sm-2">
-                      €19,000
-                    </div>
-                  </div>
-
-                  <br />
-
-                  <div class="row">
-                    <div class="col-sm-2">
-                      <input type="checkbox" data-toggle="toggle" />
-                    </div>
-
-                    <div class="col-sm-8">
-                      <label>Within a medium- or low-market department store as a concession brand</label>
-                    </div>
-
-                    <div class="col-sm-2">
-                      €15,000
-                    </div>
-                  </div>
-
-                  <br />
-
-                  <div class="row">
-                    <div class="col-sm-2">
-                      <input type="checkbox" data-toggle="toggle" />
-                    </div>
-
-                    <div class="col-sm-8">
-                      <label>Small shop in suburban area</label>
-                    </div>
-
-                    <div class="col-sm-2">
-                      €10,000
-                    </div>
-                  </div>
-
-                  <br />
-
-                  <div class="row">
-                    <div class="col-sm-2">
-                      <input type="checkbox" data-toggle="toggle" />
-                    </div>
-
-                    <div class="col-sm-8">
-                      <label>Small shop in rural area</label>
-                    </div>
-
-                    <div class="col-sm-2">
-                      €6,000
-                    </div>
-                  </div>
-
-                  <br />
 
                 </div>
+              </div>
 
-                <br />
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3>Set Stock Levels - Men</h3>
+
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th class="col-sm-2 text-center">Min</th>
+                          <th class="col-sm-8 text-center">Current value: <label id="stock-level-men-val">10000</label></th>
+                          <th class="col-sm-2 text-center">Max</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="text-center">500</th>
+                          <th class="text-center"><input id="stock-level-men" data-slider-id='stock-level-men-slider' type="text" data-slider-min="500" data-slider-max="20000" data-slider-step="100" data-slider-value="10000"/></th>
+                          <th class="text-center">20,000</th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3>Set Stock Levels - Women</h3>
+
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th class="col-sm-2 text-center">Min</th>
+                          <th class="col-sm-8 text-center">Current value: <label id="stock-level-women-val">10000</label></th>
+                          <th class="col-sm-2 text-center">Max</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="text-center">500</th>
+                          <th class="text-center"><input id="stock-level-women" data-slider-id='stock-level-women-slider' type="text" data-slider-min="500" data-slider-max="20000" data-slider-step="100" data-slider-value="10000"/></th>
+                          <th class="text-center">20,000</th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
               </div>
 
             </div>
@@ -557,8 +909,260 @@
         </div>
       </div>
 
+      <!--
+      PEOPLE
+      -->
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3>People</h3>
+        </div>
+        <div class="panel-body">
+          <div>
+            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#people-body"></button>
+          </div>
+          <div id="people-body" class="collapse row">
+            <div class="container">
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3>Set training budget</h3>
+
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th class="col-sm-2 text-center">Min</th>
+                          <th class="col-sm-8 text-center">Current value: <label id="training-budget-val">6000</label></th>
+                          <th class="col-sm-2 text-center">Max</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="col-sm-2 text-center">€2,000</th>
+                          <th class="col-sm-8 text-center"><input id="training-budget" data-slider-id='training-budget-slider' type="text" data-slider-min="2000" data-slider-max="10000" data-slider-step="100" data-slider-value="6000"/></th>
+                          <th class="col-sm-2 text-center">€10,000</th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      PROCESS
+      -->
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3>Process</h3>
+        </div>
+        <div class="panel-body">
+          <div>
+            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#process-body"></button>
+          </div>
+          <div id="process-body" class="collapse row">
+            <div class="container">
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3>Set customer service level - Men</h3>
+
+                  <div class="table-responsive">
+                    <table id="service_m" class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th class="col-sm-2 text-center"></th>
+                          <th class="col-sm-8 text-center">Name</th>
+                          <th class="col-sm-2 text-center">Cost</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="service-level-men-radio" value="5000"></th>
+                          <th>High level of personal service to customers</label></th>
+                          <th class="text-center">€5,000</th>
+                        </tr>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="service-level-men-radio" value="4000"></th>
+                          <th><label>High level of technology within the service process</label></th>
+                          <th class="text-center">€4,000</th>
+                        </tr>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="service-level-men-radio" value="2500"></th>
+                          <th><label>Medium level of personal service and medium levels of self service</label></th>
+                          <th class="text-center">€2,500</th>
+                        </tr>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="service-level-men-radio" value="2000"></th>
+                          <th><label>Low level of technology within the service process</label></th>
+                          <th class="text-center">€2,000</th>
+                        </tr>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="service-level-men-radio" value="1000" checked></th>
+                          <th><label>High level of self service by the customer</label></th>
+                          <th class="text-center">€1,000</th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3>Set customer service level - Women</h3>
+
+                  <div class="table-responsive">
+                    <table id="service_f" class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th class="col-sm-2 text-center"></th>
+                          <th class="col-sm-8 text-center">Name</th>
+                          <th class="col-sm-2 text-center">Cost</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="service-level-women-radio" value="5000"></th>
+                          <th><label>High level of personal service to customers</label></th>
+                          <th class="text-center">€5,000</th>
+                        </tr>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="service-level-women-radio" value="4000"></th>
+                          <th><label>High level of technology within the service process</label></th>
+                          <th class="text-center">€4,000</th>
+                        </tr>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="service-level-women-radio" value="2500"></th>
+                          <th><label>Medium level of personal service and medium levels of self service</label></th>
+                          <th class="text-center">€2,500</th>
+                        </tr>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="service-level-women-radio" value="2000"></th>
+                          <th><label>Low level of technology within the service process</label></th>
+                          <th class="text-center">€2,000</th>
+                        </tr>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="service-level-women-radio" value="1000" checked></th>
+                          <th><label>High level of self service by the customer</label></th>
+                          <th class="text-center">€1,000</th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--
+      PHYSICAL ENVIRONMENT
+      -->
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3>Physical Environment</h3>
+        </div>
+        <div class="panel-body">
+          <div>
+            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#physen-body"></button>
+          </div>
+          <div id="physen-body" class="collapse row">
+            <div class="container">
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3>Design and decorate shop window and interior - Men</h3>
+
+                  <div class="table-responsive">
+                    <table id="decor_m" class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th class="col-sm-2 text-center"></th>
+                          <th class="col-sm-8 text-center">Name</th>
+                          <th class="col-sm-2 text-center">Cost</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="decorate-men-radio" value="40000"></th>
+                          <th><label>Full re-fit</label></th>
+                          <th class="text-center">€40,000</th>
+                        </tr>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="decorate-men-radio" value="25000"></th>
+                          <th><label>Medium re-fit</label></th>
+                          <th class="text-center">€25,000</th>
+                        </tr>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="decorate-men-radio" value="10000" checked></th>
+                          <th><label>Low re-fit</label></th>
+                          <th class="text-center">€10,000</th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3>Design and decorate shop window and interior - Women</h3>
+
+                  <div class="table-responsive">
+                    <table id="decor_f" class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th class="col-sm-2 text-center"></th>
+                          <th class="col-sm-8 text-center">Name</th>
+                          <th class="col-sm-2 text-center">Cost</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="decorate-women-radio" value="40000"></th>
+                          <th><label>Full re-fit</label></th>
+                          <th class="text-center">€40,000</th>
+                        </tr>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="decorate-women-radio" value="25000"></th>
+                          <th><label>Medium re-fit</label></th>
+                          <th class="text-center">€25,000</th>
+                        </tr>
+                        <tr>
+                          <th class="text-center"><input type="radio" name="decorate-women-radio" value="10000" checked></th>
+                          <th><label>Low re-fit</label></th>
+                          <th class="text-center">€10,000</th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <br />
+
+      <button id="save-decisions-button" class="btn btn-primary">Save</button>
+
     </div>
   </div>
+
+</div>
 
 </body>
 </html>
