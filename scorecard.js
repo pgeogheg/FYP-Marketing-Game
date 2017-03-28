@@ -1,4 +1,41 @@
+scoreCard = {};
+
+loadScores = function() {
+	$.ajax({
+		url: 'http://localhost:3000/players/0',
+		method: 'GET',
+		dataType: 'json',
+		error: function(err) {
+			console.error(err);
+		},
+		success: function(player) {
+			parseScorecard(player);
+			displayScorecard();
+		}
+	});
+}
+
+parseScorecard = function(info) {
+	scoreCard.sales_revenue 					= info["scorecard[sales_revenue]"];
+	scoreCard.gross_margin 						= info["scorecard[gross_margin]"];
+	scoreCard.operating_profit 				= info["scorecard[operating_profit]"];
+	scoreCard.market_share_men 				= info["scorecard[market_share_men]"];
+	scoreCard.market_share_women 			= info["scorecard[market_share_women]"];
+	scoreCard.brand_awareness_men 		= info["scorecard[brand_awareness_men]"];
+	scoreCard.brand_awareness_women 	= info["scorecard[brand_awareness_women]"];
+	scoreCard.brand_image_men 				= info["scorecard[brand_image_men]"];
+	scoreCard.brand_image_women				= info["scorecard[brand_image_women]"];
+	scoreCard.brand_loyalty_men 			= info["scorecard[brand_loyalty_men]"];
+	scoreCard.brand_loyalty_women 		= info["scorecard[brand_loyalty_women]"];
+}
+
+displayScorecard = function() {
+	console.log(scoreCard);
+}
+
 window.onload = function () {
+	loadScores();
+
 	var chart_m = new CanvasJS.Chart("chartContainerM",
 	{
 		title:{
