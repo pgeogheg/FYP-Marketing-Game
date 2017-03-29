@@ -126,9 +126,13 @@ displayDashInfo = function() {
   for (var i = 0; i < 3; i++) {
     var kpi = kpis[i];
     var info = kpiInfo[kpi];
-    var progressBar = '<div id="dash-kpi-bar'+i+'" class="progress-bar progress-bar-success" role="dash-kpi-bar'+i+'" aria-valuenow="'+kpiScores[i]+'" aria-valuemin="'+info.min+'" aria-valuemax="'+info.max+'" style="width:85%; color:black;">'+kpiScores[i]+'</div>';
-    $('#kpi-prog-'+i).append(progressBar);
+    var percent = Math.floor((kpiScores[i]/info.max) * 100);
     $('#dash-kpi-head' + i).text(info.name);
+    $('#dash-kpi-bar' + i).attr('aria-valuemin', info.min);
+    $('#dash-kpi-bar' + i).attr('aria-valuemax', info.max);
+    $('#dash-kpi-bar' + i).attr('aria-valuenow', kpiScores[i]);
+    $('#dash-kpi-bar' + i).css('width', percent+"%");
+    $('#dash-kpi-bar' + i).text(kpiScores[i]);
   }
 }
 
