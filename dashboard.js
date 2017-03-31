@@ -97,22 +97,22 @@ getKpiScores = function(info) {
         kpiScores.push(info["scorecard[market_share_women]"]);
         break;
       case "5":
-        kpiScores.push(info["brand_awareness_men"]);
+        kpiScores.push(info["scorecard[brand_awareness_men]"]);
         break;
       case "6":
-        kpiScores.push(info["brand_awareness_women"]);
+        kpiScores.push(info["scorecard[brand_awareness_women]"]);
         break;
       case "7":
-        kpiScores.push(info["brand_image_men"]);
+        kpiScores.push(info["scorecard[brand_image_men]"]);
         break;
       case "8":
-        kpiScores.push(info["brand_image_women"]);
+        kpiScores.push(info["scorecard[brand_image_women]"]);
         break;
       case "9":
-        kpiScores.push(info["brand_loyalty_men"]);
+        kpiScores.push(info["scorecard[brand_loyalty_men]"]);
         break;
       case "10":
-        kpiScores.push(info["brand_loyalty_women"]);
+        kpiScores.push(info["scorecard[brand_loyalty_women]"]);
         break;
       default:
         break;

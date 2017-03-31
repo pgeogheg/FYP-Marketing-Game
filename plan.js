@@ -537,6 +537,7 @@ window.onload = function() {
           dataType: 'json',
           success: function(msg) {
             console.log(msg);
+            alert("Changes saved!");
           },
           error: function(err) {
             console.error(err);

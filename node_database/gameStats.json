@@ -11,8 +11,8 @@
       ],
       "decisions[kpis][]": [
         "0",
-        "1",
-        "2"
+        "3",
+        "7"
       ],
       "decisions[positioning][price_m]": "1",
       "decisions[positioning][price_f]": "2",
@@ -65,8 +65,8 @@
     },
     {
       "id": 1,
-      "title": "Numbers",
-      "contents": "0123456789"
+      "title": "Q&A with fashion blogger Margaret Beatty",
+      "contents": "Q – What’s the next big trend in jeans? \nA – I think young people and students are crying out for the big jeans brands to let them customise their pairs online. We already see it with sportswear companies, especially with trainers, and jeans will soon follow suit. Lots of shoppers already do it themselves. \n\nQ – What evidence is there that customising jeans is so popular?\nA – Just look around you when you go out! Younger shoppers don’t just want traditional plain jeans, they tend to go for trendier pairs, such as the boom in wearing skinny jeans, or they’re customising their own. I see loads of people dyeing their jeans, bleaching them, using patches, studs, beads, there’s lots you can do. It’s all about feeling ‘unique’, and expressing their personalities through fashion, I think. \n\nQ – Where can we buy our own? \nA – There are websites that let you do it, or that give you tips on how to customise at home – I’ve heard of a few bloggers putting tutorials up on YouTube – but if you ask me most kids want the end-result of customised jeans, but also the convenience of doing it online and a finished product guaranteed to not have any flaws. I wouldn’t be surprised if some of the big brands started catching on soon. \n\nSource: Catwalk (high-end monthly fashion magazine)"
     },
     {
       "id": 2,
