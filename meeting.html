@@ -9,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
-  <script src="dashboard.js"></script>
+  <script src="meeting.js"></script>
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 550px}
@@ -43,10 +43,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a>Home</a></li>
+        <li><a href="dashboard.html">Home</a></li>
         <li><a href="articles.html">Articles</a></li>
         <li><a href="plan.html">Marketing Plan</a></li>
-        <li><a href="meeting.html">Meet with CEO</a></li>
+        <li class="active"><a href="#section3">Meet with CEO</a></li>
         <li><a href="scorecard.html">Scorecard</a></li>
         <li><a href="#section3">Settings</a></li>
       </ul>
@@ -62,10 +62,10 @@
         <div class="col-sm-12">
           <h2>Marketing Game</h2>
           <ul class="nav nav-pills nav-stacked">
-            <li class="active"><a href="dashboard.html">Home</a></li>
+            <li><a href="dashboard.html">Home</a></li>
             <li><a href="articles.html">Articles</a></li>
             <li><a href="plan.html">Marketing Plan</a></li>
-            <li><a href="meeting.html">Meet with CEO</a></li>
+            <li class="active"><a href="#section3">Meet with CEO</a></li>
             <li><a href="scorecard.html">Scorecard</a></li>
             <li><a href="#section3">Settings</a></li>
           </ul><br>
@@ -90,79 +90,30 @@
 
     <div class="col-sm-9">
       <div class="well">
-        <h2>Home</h2>
+        <h2>Meeting with CEO</h2>
       </div>
 
-      <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-          <div class="well position_box text-center">
-            <h4>Position</h4>
-            <h1>1</h1>
-            <h1 id="dash-score"></h1>
-          </div>
-        </div>
-        <div class="col-sm-3"></div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="well">
-            <h4 id="dash-kpi-head0"></h4>
-            <div id="kpi-prog-0" class="progress">
-              <div id="dash-kpi-bar0" class="progress-bar progress-bar-success" role="dash-kpi-bar0" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0" style="color:black;"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="well">
-            <h4 id="dash-kpi-head1"></h4>
-            <div id="kpi-prog-1" class="progress">
-              <div id="dash-kpi-bar1" class="progress-bar progress-bar-success" role="dash-kpi-bar1" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0" style="color:black;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <h4 id="dash-kpi-head2"></h4>
-            <div id="kpi-prog-2" class="progress">
-              <div id="dash-kpi-bar2" class="progress-bar progress-bar-success" role="dash-kpi-bar2" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0" style="color:black;"></div>
-            </div>
+      <div id="ceo-question" class="panel panel-primary">
+        <div class="panel-heading">
+          <h3>Talk to the CEO?</h3>
+          <h4>You can only to the CEO once per quarter</h4>
+          <div class="btn-group">
+            <button id="ceo-yes" type="button" class="btn btn-success">Yes</button>
+            <button id="ceo-no" type="button" class="btn btn-danger">No</button>
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="well">
-            <h4>Quarter 1: 7Ps of Marketing</h4>
-            <p>Text describing the lesson that will be taught during this quarter.</p>
-          </div>
+      <div id="ceo-advice" class="panel panel-primary">
+        <div class="panel-heading">
+          <h3>CEO's Advice</h3>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="well">
-            <h4>Next Rollover:</h4>
-            <h1>25th March 2017, 09:00</h1>
-          </div>
+        <div class="panel-body">
+          You're fired! LOL!
         </div>
       </div>
 
-      <hr />
-
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="well">
-            <h2>Market Information</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <img src="infographic.png" class="img-responsive"/>
-      </div>
+      <button id="ceo-debug" type="button" class="btn btn-warning">Reset</button>
 
     </div>
   </div>

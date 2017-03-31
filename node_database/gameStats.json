@@ -5,9 +5,9 @@
       "name": "Player 1",
       "score": "10763",
       "articleRanks[]": [
-        "Alphabet",
-        "Latin",
-        "Numbers"
+        "2",
+        "1",
+        "0"
       ],
       "decisions[kpis][]": [
         "0",
@@ -47,7 +47,8 @@
       "scorecard[brand_image_men]": "92",
       "scorecard[brand_image_women]": "60",
       "scorecard[brand_loyalty_men]": "50",
-      "scorecard[brand_loyalty_women]": "50"
+      "scorecard[brand_loyalty_women]": "50",
+      "ceo": "false"
     },
     {
       "id": 1,
@@ -59,8 +60,8 @@
   "articles": [
     {
       "id": 0,
-      "title": "Alphabet",
-      "contents": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      "title": "A third of clothes bought online are returned",
+      "contents": "A third of clothes bought online last month in the UK were returned after customers tried them on at home, it has been revealed. The survey, published by UK Retail Watch, showed 62 per cent of people returning clothes blamed how they fitted once they’d tried them out, while 18 per cent said products appeared different in real life to their pictures on the website. It shows that despite the growing popularity of online clothes shopping, customers are ‘more than willing to return items they aren’t completely satisfied with’, according to UK Retail Watch analyst Ralph Bowman. \nHe added: ‘If 33 per cent of customers are saying they aren’t happy with their clothes and are sending them back, the online clothes shopping model clearly isn’t a magic cure for slumps in high-street growth. ‘Profit margins for online-only clothing companies can be rather slim, so returns can make a big difference. ‘It’s interesting that clothing companies that augment their bricks-and-mortar retailing with online shopping saw fewer returns of clothes last month. It’s likely that some customers first see and try on items on the high street, then purchase later online.’ The companies behind the BeUnique, Modismo and FashionFirst retail websites all have recorded dips in growth for the second consecutive quarter.\n Source: The Sunday Chronicle (Sunday broadsheet newspaper)"
     },
     {
       "id": 1,
