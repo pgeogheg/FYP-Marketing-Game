@@ -43,7 +43,9 @@
       "scorecard[brand_image_women]": "60",
       "scorecard[brand_loyalty_men]": "50",
       "scorecard[brand_loyalty_women]": "50",
-      "ceo": "false"
+      "ceo": "false",
+      "articleRanks[]": [
+      ]
     },
     {
       "id": 1,

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="node_database/node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css">
-  <link rel="stylesheet" href="https://bootswatch.com/sandstone/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
@@ -30,6 +30,10 @@
     th input {
       height: 20px;
       width: 20px;
+    }
+
+    .panel-primary .panel-heading h3 {
+      color: white;
     }
 
     /* On small screens, set height to 'auto' for the grid */
@@ -105,9 +109,15 @@
     <br>
 
     <div class="col-sm-9">
-      <div class="well">
-        <h2>Marketing Plan</h2>
+      <div class="panel">
+        <div class="panel-heading">
+          <h1 class="text-uppercase">Marketing Plan</h1>
+        </div>
       </div>
+
+      <button id="save-decisions-button" class="btn btn-success">Save</button>
+
+      <hr />
 
       <!--
       KPIs
@@ -119,7 +129,7 @@
         </div>
         <div class="panel-body">
           <div>
-            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#kpi-body"></button>
+            <button type="button" class="btn btn-link glyphicon glyphicon-menu-down" data-toggle="collapse" data-target="#kpi-body"></button>
           </div>
           <div id="kpi-body" class="collapse">
             <div class="container fluid">
@@ -203,7 +213,7 @@
         </div>
         <div class="panel-body">
           <div>
-            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#tarmar-body"></button>
+            <button type="button" class="btn btn-link glyphicon glyphicon-menu-down" data-toggle="collapse" data-target="#tarmar-body"></button>
           </div>
           <div id="tarmar-body" class="collapse">
             <div class="container fluid">
@@ -317,7 +327,7 @@
         </div>
         <div class="panel-body">
           <div>
-            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#position-body"></button>
+            <button type="button" class="btn btn-link glyphicon glyphicon-menu-down" data-toggle="collapse" data-target="#position-body"></button>
           </div>
           <div id="position-body" class="collapse">
             <div class="container fluid">
@@ -421,7 +431,7 @@
         </div>
         <div class="panel-body">
           <div>
-            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#product-body"></button>
+            <button type="button" class="btn btn-link glyphicon glyphicon-menu-down" data-toggle="collapse" data-target="#product-body"></button>
           </div>
           <div id="product-body" class="collapse">
             <div class="container fluid">
@@ -564,7 +574,7 @@
         </div>
         <div class="panel-body">
           <div>
-            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#price-body"></button>
+            <button type="button" class="btn btn-link glyphicon glyphicon-menu-down" data-toggle="collapse" data-target="#price-body"></button>
           </div>
           <div id="price-body" class="collapse">
             <div class="container fluid">
@@ -637,7 +647,7 @@
         </div>
         <div class="panel-body">
           <div>
-            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#promotion-body"></button>
+            <button type="button" class="btn btn-link glyphicon glyphicon-menu-down" data-toggle="collapse" data-target="#promotion-body"></button>
           </div>
           <div id="promotion-body" class="collapse">
             <div class="container fluid">
@@ -754,7 +764,7 @@
         </div>
         <div class="panel-body">
           <div>
-            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#place-body"></button>
+            <button type="button" class="btn btn-link glyphicon glyphicon-menu-down" data-toggle="collapse" data-target="#place-body"></button>
           </div>
           <div id="place-body" class="collapse row">
             <div class="container">
@@ -919,7 +929,7 @@
         </div>
         <div class="panel-body">
           <div>
-            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#people-body"></button>
+            <button type="button" class="btn btn-link glyphicon glyphicon-menu-down" data-toggle="collapse" data-target="#people-body"></button>
           </div>
           <div id="people-body" class="collapse row">
             <div class="container">
@@ -964,7 +974,7 @@
         </div>
         <div class="panel-body">
           <div>
-            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#process-body"></button>
+            <button type="button" class="btn btn-link glyphicon glyphicon-menu-down" data-toggle="collapse" data-target="#process-body"></button>
           </div>
           <div id="process-body" class="collapse row">
             <div class="container">
@@ -1074,7 +1084,7 @@
         </div>
         <div class="panel-body">
           <div>
-            <button type="button" class="btn btn-link glyphicon glyphicon-chevron-down" data-toggle="collapse" data-target="#physen-body"></button>
+            <button type="button" class="btn btn-link glyphicon glyphicon-menu-down" data-toggle="collapse" data-target="#physen-body"></button>
           </div>
           <div id="physen-body" class="collapse row">
             <div class="container">
@@ -1155,9 +1165,9 @@
         </div>
       </div>
 
-      <br />
+      <hr />
 
-      <button id="save-decisions-button" class="btn btn-primary">Save</button>
+      <button id="save-decisions-button" class="btn btn-success">Save</button>
 
     </div>
   </div>

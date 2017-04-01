@@ -132,7 +132,7 @@ displayDashInfo = function() {
     $('#dash-kpi-bar' + i).attr('aria-valuemax', info.max);
     $('#dash-kpi-bar' + i).attr('aria-valuenow', kpiScores[i]);
     $('#dash-kpi-bar' + i).css('width', percent+"%");
-    $('#dash-kpi-bar' + i).text(kpiScores[i]);
+    $('#kpi-prog-text-' + i).text(kpiScores[i]);
   }
 }
 

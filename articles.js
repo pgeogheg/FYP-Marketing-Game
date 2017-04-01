@@ -89,7 +89,7 @@ displayArticles = function(ids) {
 
 showRankings = function(rankings) {
   $('#current-rank').empty();
-  if (rankings != []) {
+  if (rankings && rankings != []) {
     $('#current-rank').append('<h2>Current Ranking</h2>');
     for (var i = 0; i < rankings.length; i++) {
       $('#current-rank').append('<li class="list-group-item">'+articles[rankings[i]].title+'</li>')
