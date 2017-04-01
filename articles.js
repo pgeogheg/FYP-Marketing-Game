@@ -10,7 +10,7 @@ function changeArticle(index) {
 }
 
 window.onload = function() {
-  showArticles([0, 1, 2]);
+  showArticles([0, 1, 2, 3]);
   getPlayerRankings();
 }
 

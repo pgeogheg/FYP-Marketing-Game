@@ -4,11 +4,6 @@
       "id": 0,
       "name": "Player 1",
       "score": "10763",
-      "articleRanks[]": [
-        "2",
-        "1",
-        "0"
-      ],
       "decisions[kpis][]": [
         "0",
         "3",
@@ -30,11 +25,11 @@
       "decisions[product][improvements_m][]": "8",
       "decisions[product][improvements_f][]": "18",
       "decisions[promotion][message_m][]": [
-        "1",
-        "3"
+        "3",
+        "5"
       ],
       "decisions[promotion][message_f][]": [
-        "4",
+        "3",
         "5"
       ],
       "scorecard[sales_revenue]": "1215000",
@@ -44,7 +39,7 @@
       "scorecard[market_share_women]": "19",
       "scorecard[brand_awareness_men]": "12",
       "scorecard[brand_awareness_women]": "12",
-      "scorecard[brand_image_men]": "92",
+      "scorecard[brand_image_men]": "40",
       "scorecard[brand_image_women]": "60",
       "scorecard[brand_loyalty_men]": "50",
       "scorecard[brand_loyalty_women]": "50",
@@ -70,8 +65,13 @@
     },
     {
       "id": 2,
-      "title": "Latin",
-      "contents": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title": "Brand report card",
+      "contents": "A Brand report card is a process, which may be used by the companies to periodically audit their brands’ strengths and weaknesses on certain relevant product characteristics and comparing these with the strong brands in the same product category. Kevin Lane Keller in a HBR article (2000) has identified 10 attributes that would measure the strength of the brands and constructed a report card. The traits can be listed as follows:\n1. The brand excels at delivering the benefits customers truly desire - Branding brings in the relationship between the way we project our products and the way customers accept it. It is very important to understand what the customers actually want and deliver the same.\n2. The brand stays relevant - Keep pace with the requirements of the customer's preference which is subject to change periodically a thus stay relevant.\n3. The pricing strategy is based on consumers’ perceptions of value - Value pricing should not be adopted at the expense of essential brand-building activities.\n4. The brand is properly positioned - Studies the strength on the basis of two variables - point of parity (thereby neutralizing the competitors’ advantages) and point of difference (thereby achieving advantages over competitors).\n5. The brand is consistent - Keeping the right balance between continuance in marketing activities and the kind of change needed to stay relevant.\n6. The brand portfolio and hierarchy make sense - Studies the strength of the brand based on its portfolio and the way it is arrived at. Single product lines are often sold under different brand names, and different brands within a company hold different powers.\n7. The brand makes use of and coordinates a full range of marketing activities to build equity - Measures the ability of the brand to reach the target customers and create value and thereby create brand equity.\n8. The brand’s managers understand what the brand means to consumers - If its clear what customers like and don’t like about a brand, and what core associations are linked to the brand, then it should also be clear whether any given action will reinforce the brand or create friction.\n9. The brand is given proper support and that support is sustained over the long run.\n10. The company monitors sources of brand equity - Creating brand equity is not an easy job but sustaining it is tougher. Strong brands generally make good and frequent use of in-depth brand audits and ongoing brand-tracking studies."
+    },
+    {
+      "id": 3,
+      "title": "Branding in the Digital Age",
+      "contents": "Consumers today connect with brands in a fundamentally new way, often through media channels that are beyond manufacturers’ and retailers’ control.  This means traditional marketing strategies must be resigned to accord with how brand relationships have changed. Consumers still want a clear brand proposition, what has changed is when – at what touch points – consumers are open to influence: \nThen: The Funnel Metaphor\n\nFor years, marketers assumed that customers started with a large number of potential brands in mind and methodically winnowed their choices until they'd decided which one to buy. After purchase, their relationship with the brand typically focused on the use of the product or the service itself.\n\nNow: The Consumer Decision Journey\n\nNew research shows that rather than systematically narrowing their choices, consumers add and subtract the brands from a group under consideration during an extended evaluation phase. After purchase, they often enter into an open-ended relationship with the brand, sharing their experience with it online.\n\nConsider & Buy\n\nMarketers often overemphasize the \"consider\" and \"buy\" stages of the journey, allocating more resources than they should to building awareness through advertising and encouraging purchase with retail promoting.\n\nEvaluate & Advocate\n\nNew media make the \"evaluate\" and \"advocate\" stages increasingly relevant. Marketing investments that help consumers navigate the evaluation process and then spread positive word of mouth about the brands they choose can be as important as building awareness and driving pruchase.\n\nBond\n\nIf consumers' bond with a brand is strong enough, they repurchase it without cycling through the earlier decision-journey stages."
     }
   ]
 }

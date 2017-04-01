@@ -53,7 +53,6 @@ loadDecisions = function() {
     dataType: 'json',
     success: function(player) {
       parseDecisions(player);
-      console.log(decisions);
       setDecisions();
     },
     error: function(err) {
@@ -186,14 +185,12 @@ setDecisions = function() {
   kpis_checked.forEach(function(elem) {
     $('#kpis tbody tr th input[value="'+elem+'"]').prop('checked', true);
   });
-  console.log("KPI decisions set");
 
   // SET POSITIONING DECISIONS
   $('#positioning_m tbody tr th input[name="position-price-men-radio"][value="'+decisions.positioning.price_m+'"]').prop('checked', true);
   $('#positioning_f tbody tr th input[name="position-price-women-radio"][value="'+decisions.positioning.price_f+'"]').prop('checked', true);
   $('#positioning_m tbody tr th input[name="position-quality-men-radio"][value="'+decisions.positioning.quality_m+'"]').prop('checked', true);
   $('#positioning_f tbody tr th input[name="position-quality-women-radio"][value="'+decisions.positioning.quality_f+'"]').prop('checked', true);
-  console.log("Positioning decisions set");
 
   // SET PRODUCT DECISIONS
   $('#quality-men').slider('setValue', decisions.product.quality_m);
@@ -218,14 +215,12 @@ setDecisions = function() {
   } else {
     $('#improvements_f tbody tr th input[value="'+improvements_f_checked+'"]').bootstrapToggle('on');
   }
-  console.log("Product decisions set");
 
   // SET PRICE DECISIONS
   $('#price-men').slider('setValue', decisions.price.sell_m);
   $('#price-men-val').text(decisions.price.sell_m);
   $('#price-women').slider('setValue', decisions.price.sell_f);
   $('#price-women-val').text(decisions.price.sell_f);
-  console.log("Price decisions set");
 
   // SET PROMOTION DECISIONS
   var message_m_checked = decisions.promotion.message_m;
@@ -245,8 +240,6 @@ setDecisions = function() {
   } else {
     $('#message_f tbody tr th input[value="'+message_f_checked+'"]').prop('checked', true);
   }
-
-  console.log("Promotion decisions set");
 
   // SET PLACE DECISIONS
   var phy_dist_checked = decisions.place.phy_dist;
@@ -271,22 +264,18 @@ setDecisions = function() {
   $('#stock-level-men-val').text(decisions.place.stock_m);
   $('#stock-level-women').slider('setValue', decisions.place.stock_f);
   $('#stock-level-women-val').text(decisions.place.stock_f);
-  console.log("Place decisions set");
 
   // SET PEOPLE DECISIONS
   $('#training-budget').slider('setValue', decisions.people.training_bud);
   $('#training-budget-val').text(decisions.people.training_bud);
-  console.log("People decisions set");
 
   // SET PROCESS DECISIONS
   $('#service_m tbody tr th input[value="'+decisions.process.service_m+'"]').prop('checked', true);
   $('#service_f tbody tr th input[value="'+decisions.process.service_f+'"]').prop('checked', true);
-  console.log("Process decisions set");
 
   // SET PHYSICAL ENVIRONMENT DECISIONS
   $('#decor_m tbody tr th input[value="'+decisions.physical_environment.decor_m+'"]').prop('checked', true);
   $('#decor_f tbody tr th input[value="'+decisions.physical_environment.decor_f+'"]').prop('checked', true);
-  console.log("Physical Environment decisions set");
 }
 
 getDecisions = function() {
@@ -297,15 +286,11 @@ getDecisions = function() {
     decisions.kpis.push($(this).val());
   });
 
-  console.log(decisions.kpis);
-
   // GET POSITIONING DECISIONS
   decisions.positioning.price_m = $('#positioning_m tbody tr th input[name="position-price-men-radio"]:checked').val();
   decisions.positioning.price_f = $('#positioning_f tbody tr th input[name="position-price-women-radio"]:checked').val();
   decisions.positioning.quality_m = $('#positioning_m tbody tr th input[name="position-quality-men-radio"]:checked').val();
   decisions.positioning.quality_f = $('#positioning_f tbody tr th input[name="position-quality-women-radio"]:checked').val();
-
-  console.log(decisions.positioning);
 
   // GET PRODUCT DECISIONS
   decisions.product.quality_m = $('#quality-men-val').text();
@@ -323,13 +308,9 @@ getDecisions = function() {
     decisions.product.improvements_f.push($(this).val());
   });
 
-  console.log(decisions.product);
-
   // GET PRICE DECISIONS
   decisions.price.sell_m = $('#price-men-val').text();
   decisions.price.sell_f = $('#price-women-val').text();
-
-  console.log(decisions.price);
 
   // GET PROMOTION DECISIONS
   decisions.promotion.message_m = [];
@@ -343,8 +324,6 @@ getDecisions = function() {
   message_f_checked.each(function(){
     decisions.promotion.message_f.push($(this).val());
   });
-
-  console.log(decisions.promotion);
 
   // GET PLACE DECISIONS
   decisions.place.phy_dist = [];
@@ -362,24 +341,16 @@ getDecisions = function() {
   decisions.place.stock_m = $('#stock-level-men-val').text();
   decisions.place.stock_f = $('#stock-level-women-val').text();
 
-  console.log(decisions.place);
-
   // GET PEOPLE DECISIONS
   decisions.people.training_bud = $('#training-budget-val').text();
-
-  console.log(decisions.people);
 
   // GET PROCESS DECISIONS
   decisions.process.service_m = $('#service_m tbody tr th input:checked').val();
   decisions.process.service_f = $('#service_f tbody tr th input:checked').val();
 
-  console.log(decisions.process);
-
   // GET PHYSICAL ENVIRONMENT DECISIONS
   decisions.physical_environment.decor_m = $('#decor_m tbody tr th input:checked').val();
   decisions.physical_environment.decor_f = $('#decor_f tbody tr th input:checked').val();
-
-  console.log(decisions.physical_environment);
 
 }
 
@@ -466,13 +437,10 @@ window.onload = function() {
     return res;
   }
 
-  var count0 = getChecked("max-2-0");
-  var count1 = getChecked("max-2-1");
-  var count2 = getChecked("max-3");
-
   $('.max-2-0').click(function(t){
+    var count0 = getChecked("max-2-0");
     if (t.target.nodeName == "INPUT") {
-      if (count0 === 2) {
+      if (count0 > 2) {
         if (!t.target.checked) {
           count0 -= 1;
         }
@@ -488,8 +456,9 @@ window.onload = function() {
   });
 
   $('.max-2-1').click(function(t){
+    var count1 = getChecked("max-2-1");
     if (t.target.nodeName == "INPUT") {
-      if (count1 === 2) {
+      if (count1 > 2) {
         if (!t.target.checked) {
           count1 -= 1;
         }
@@ -505,9 +474,9 @@ window.onload = function() {
   });
 
   $('.max-3').click(function(t){
-    console.log(t);
+    var count2 = getChecked("max-3");
     if (t.target.nodeName == "INPUT") {
-      if (count2 === 3) {
+      if (count2 > 3) {
         if (!t.target.checked) {
           count2 -= 1;
         }
@@ -536,7 +505,6 @@ window.onload = function() {
           data: player,
           dataType: 'json',
           success: function(msg) {
-            console.log(msg);
             alert("Changes saved!");
           },
           error: function(err) {
