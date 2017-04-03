@@ -2,8 +2,8 @@
   "players": [
     {
       "id": 0,
-      "name": "Player 1",
-      "score": "10763",
+      "name": "You",
+      "score": "250",
       "decisions[kpis][]": [
         "0",
         "3",
@@ -17,6 +17,8 @@
       "decisions[product][quality_f]": "60",
       "decisions[price][sell_m]": "100",
       "decisions[price][sell_f]": "150",
+      "decisions[place][stock_m]": "10000",
+      "decisions[place][stock_f]": "10000",
       "decisions[people][training_bud]": "6000",
       "decisions[process][service_m]": "2500",
       "decisions[process][service_f]": "5000",
@@ -32,7 +34,7 @@
         "3",
         "5"
       ],
-      "scorecard[sales_revenue]": "1215000",
+      "scorecard[sales_revenue]": "945000",
       "scorecard[gross_margin]": "55",
       "scorecard[operating_profit]": "508000",
       "scorecard[market_share_men]": "20",
@@ -43,15 +45,77 @@
       "scorecard[brand_image_women]": "60",
       "scorecard[brand_loyalty_men]": "50",
       "scorecard[brand_loyalty_women]": "50",
+      "scorecard[target_sales_men]": "50",
+      "scorecard[target_sales_women]": "50",
       "ceo": "false",
       "articleRanks[]": [
-      ]
+      ],
+      "financial[sales_revenue_m]": "540000",
+      "financial[sales_revenue_f]": "405000",
+      "financial[materials_m]": "300000",
+      "financial[materials_f]": "90000",
+      "financial[manufacturing_m]": "30000",
+      "financial[manufacturing_f]": "0",
+      "financial[labelling_m]": "5000",
+      "financial[labelling_f]": "5000",
+      "financial[promotion]": "47000",
+      "financial[advertising]": "7000",
+      "financial[training]": "4000",
+      "financial[service]": "58000",
+      "financial[rent]": "6000",
+      "financial[online]": "4000",
+      "financial[overheads]": "35000",
+      "demand_m": "15939",
+      "demand_f": "17540"
     },
     {
       "id": 1,
       "name": "Player 2",
-      "score": 0,
-      "articleRanks[]": []
+      "score": "250",
+      "sales_revenue_m": "390000",
+      "sales_revenue_f": "420000"
+    },
+    {
+      "id": 2,
+      "name": "Player 3",
+      "score": "300",
+      "sales_revenue_m": "510000",
+      "sales_revenue_f": "570000"
+    },
+    {
+      "id": 3,
+      "name": "Player 4",
+      "score": "350",
+      "sales_revenue_m": "210000",
+      "sales_revenue_f": "210000"
+    },
+    {
+      "id": 4,
+      "name": "Player 5",
+      "score": "200",
+      "sales_revenue_m": "480000",
+      "sales_revenue_f": "660000"
+    },
+    {
+      "id": 5,
+      "name": "Player 6",
+      "score": "100",
+      "sales_revenue_m": "420000",
+      "sales_revenue_f": "360000"
+    },
+    {
+      "id": 6,
+      "name": "Player 7",
+      "score": "150",
+      "sales_revenue_m": "150000",
+      "sales_revenue_f": "150000"
+    },
+    {
+      "id": 7,
+      "name": "Player 8",
+      "score": "150",
+      "sales_revenue_m": "150000",
+      "sales_revenue_f": "150000"
     }
   ],
   "articles": [

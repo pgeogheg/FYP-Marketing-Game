@@ -27,6 +27,9 @@ parseScorecard = function(info) {
 	scoreCard.brand_image_women				= info["scorecard[brand_image_women]"];
 	scoreCard.brand_loyalty_men 			= info["scorecard[brand_loyalty_men]"];
 	scoreCard.brand_loyalty_women 		= info["scorecard[brand_loyalty_women]"];
+
+	scoreCard.target_sales_men 				= info["scorecard[target_sales_men]"];
+	scoreCard.target_sales_women			= info["scorecard[target_sales_women]"];
 }
 
 displayScorecard = function() {
@@ -75,6 +78,14 @@ displayScorecard = function() {
 	$('div[role="brand-loyalty-women-bar"]').prop('aria-valuenow', scoreCard.brand_loyalty_women);
 	$('div[role="brand-loyalty-women-bar"]').text(scoreCard.brand_loyalty_women);
 	$('div[role="brand-loyalty-women-bar"]').css("width", Math.floor((scoreCard.brand_loyalty_women/50)*100) + "%");
+
+	$('div[role="target-sales-men-bar"]').prop('aria-valuenow', scoreCard.target_sales_men);
+	$('div[role="target-sales-men-bar"]').text(scoreCard.target_sales_men);
+	$('div[role="target-sales-men-bar"]').css("width", scoreCard.target_sales_men + "%");
+
+	$('div[role="target-sales-women-bar"]').prop('aria-valuenow', scoreCard.target_sales_women);
+	$('div[role="target-sales-women-bar"]').text(scoreCard.target_sales_women);
+	$('div[role="target-sales-women-bar"]').css("width", scoreCard.target_sales_women + "%");
 }
 
 window.onload = function () {

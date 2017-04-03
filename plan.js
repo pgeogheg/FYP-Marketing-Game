@@ -168,6 +168,8 @@ unparseDecisions = function(info) {
   info["decisions[promotion][message_f][]"] = decisions.promotion.message_f;
   info["decisions[place][phy_dist][]"] = decisions.place.phy_dist;
   info["decisions[place][onl_dist][]"] = decisions.place.onl_dist;
+  info["decisions[place][stock_m]"] = decisions.place.stock_m;
+  info["decisions[place][stock_f]"] = decisions.place.stock_f;
   info["decisions[people][training_bud]"] = decisions.people.training_bud;
   info["decisions[process][service_m]"] = decisions.process.service_m;
   info["decisions[process][service_f]"] = decisions.process.service_f;
@@ -355,8 +357,6 @@ getDecisions = function() {
 }
 
 window.onload = function() {
-
-
 
   $('#quality-men').slider({
   	formatter: function(value) {
