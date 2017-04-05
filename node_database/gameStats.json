@@ -48,8 +48,6 @@
       "scorecard[target_sales_men]": "50",
       "scorecard[target_sales_women]": "50",
       "ceo": "false",
-      "articleRanks[]": [
-      ],
       "financial[sales_revenue_m]": "540000",
       "financial[sales_revenue_f]": "405000",
       "financial[materials_m]": "300000",
