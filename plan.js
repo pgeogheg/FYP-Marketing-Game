@@ -491,7 +491,7 @@ window.onload = function() {
     }
   });
 
-  $('#save-decisions-button').on("click", function() {
+  $('.save-decisions-button').on("click", function() {
     getDecisions();
     $.ajax({
       url: 'http://localhost:3000/players/0',
@@ -506,6 +506,7 @@ window.onload = function() {
           dataType: 'json',
           success: function(msg) {
             alert("Changes saved!");
+            console.log("Changes saved!");
           },
           error: function(err) {
             console.error(err);

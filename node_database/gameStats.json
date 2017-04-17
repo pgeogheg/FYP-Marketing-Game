@@ -3,37 +3,27 @@
     {
       "id": 0,
       "name": "You",
-      "score": "250",
+      "score": "700",
       "decisions[kpis][]": [
         "0",
         "3",
         "7"
       ],
-      "decisions[positioning][price_m]": "1",
-      "decisions[positioning][price_f]": "2",
-      "decisions[positioning][quality_m]": "2",
-      "decisions[positioning][quality_f]": "2",
+      "decisions[positioning][price_m]": "0",
+      "decisions[positioning][price_f]": "0",
+      "decisions[positioning][quality_m]": "0",
+      "decisions[positioning][quality_f]": "0",
       "decisions[product][quality_m]": "30",
       "decisions[product][quality_f]": "60",
       "decisions[price][sell_m]": "100",
       "decisions[price][sell_f]": "150",
-      "decisions[place][stock_m]": "10000",
-      "decisions[place][stock_f]": "10000",
+      "decisions[place][stock_m]": "5000",
+      "decisions[place][stock_f]": "5000",
       "decisions[people][training_bud]": "6000",
-      "decisions[process][service_m]": "2500",
-      "decisions[process][service_f]": "5000",
+      "decisions[process][service_m]": "1000",
+      "decisions[process][service_f]": "1000",
       "decisions[physical_environment][decor_m]": "10000",
       "decisions[physical_environment][decor_f]": "10000",
-      "decisions[product][improvements_m][]": "8",
-      "decisions[product][improvements_f][]": "18",
-      "decisions[promotion][message_m][]": [
-        "3",
-        "5"
-      ],
-      "decisions[promotion][message_f][]": [
-        "3",
-        "5"
-      ],
       "scorecard[sales_revenue]": "945000",
       "scorecard[gross_margin]": "55",
       "scorecard[operating_profit]": "508000",
@@ -45,6 +35,7 @@
       "scorecard[brand_image_women]": "60",
       "scorecard[brand_loyalty_men]": "50",
       "scorecard[brand_loyalty_women]": "50",
+      "scorecard[stock_management]": "50",
       "scorecard[target_sales_men]": "50",
       "scorecard[target_sales_women]": "50",
       "ceo": "false",
@@ -69,49 +60,55 @@
     {
       "id": 1,
       "name": "Player 2",
-      "score": "250",
+      "score": "750",
+      "result": "1400",
       "sales_revenue_m": "390000",
       "sales_revenue_f": "420000"
     },
     {
       "id": 2,
       "name": "Player 3",
-      "score": "300",
+      "score": "900",
+      "result": "1500",
       "sales_revenue_m": "510000",
       "sales_revenue_f": "570000"
     },
     {
       "id": 3,
       "name": "Player 4",
-      "score": "350",
+      "score": "1050",
+      "result": "2000",
       "sales_revenue_m": "210000",
       "sales_revenue_f": "210000"
     },
     {
       "id": 4,
       "name": "Player 5",
-      "score": "200",
+      "score": "600",
+      "result": "1000",
       "sales_revenue_m": "480000",
       "sales_revenue_f": "660000"
     },
     {
       "id": 5,
       "name": "Player 6",
-      "score": "100",
+      "score": "300",
+      "result": "1200",
       "sales_revenue_m": "420000",
       "sales_revenue_f": "360000"
     },
     {
       "id": 6,
       "name": "Player 7",
-      "score": "150",
+      "score": "400",
+      "result": "1200",
       "sales_revenue_m": "150000",
       "sales_revenue_f": "150000"
     },
     {
       "id": 7,
       "name": "Player 8",
-      "score": "150",
+      "score": "1500",
       "sales_revenue_m": "150000",
       "sales_revenue_f": "150000"
     }
@@ -137,5 +134,8 @@
       "title": "Branding in the Digital Age",
       "contents": "Consumers today connect with brands in a fundamentally new way, often through media channels that are beyond manufacturers’ and retailers’ control.  This means traditional marketing strategies must be resigned to accord with how brand relationships have changed. Consumers still want a clear brand proposition, what has changed is when – at what touch points – consumers are open to influence: \nThen: The Funnel Metaphor\n\nFor years, marketers assumed that customers started with a large number of potential brands in mind and methodically winnowed their choices until they'd decided which one to buy. After purchase, their relationship with the brand typically focused on the use of the product or the service itself.\n\nNow: The Consumer Decision Journey\n\nNew research shows that rather than systematically narrowing their choices, consumers add and subtract the brands from a group under consideration during an extended evaluation phase. After purchase, they often enter into an open-ended relationship with the brand, sharing their experience with it online.\n\nConsider & Buy\n\nMarketers often overemphasize the \"consider\" and \"buy\" stages of the journey, allocating more resources than they should to building awareness through advertising and encouraging purchase with retail promoting.\n\nEvaluate & Advocate\n\nNew media make the \"evaluate\" and \"advocate\" stages increasingly relevant. Marketing investments that help consumers navigate the evaluation process and then spread positive word of mouth about the brands they choose can be as important as building awareness and driving pruchase.\n\nBond\n\nIf consumers' bond with a brand is strong enough, they repurchase it without cycling through the earlier decision-journey stages."
     }
-  ]
+  ],
+  "results": {
+
+  }
 }

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="scorecard.js"></script>
+  <script src="scoreCalc.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      height: 100%;
+    }
+
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+
+    <div class="col-sm-12">
+
+      <div class="panel">
+        <div class="panel-heading">
+          <h1 class="text-uppercase">Marketing Objective</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              Marketing Objective
+            </div>
+            <div class="panel-body">
+              Increase Brand Image for Men by 5% to earn bonus points.
+            </div>
+            <div class="panel-footer">
+              <h2 id="marketing-objective-status"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-heading">
+          <h1 class="text-uppercase">Scorecard</h1>
+        </div>
+      </div>
+
+      <div class="table-responseive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th class="col-sm-5">Score</th>
+              <th class="col-sm-7">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+
+              <th>Sales revenue</th>
+              <th>
+                <div class="row">
+                  <div class="col-sm-1">€0</div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="sales-revenue-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="2000000" style="color:black;"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-default" role="new-sales-rev-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="2000000" style="color:black;"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">€2,000,000</div>
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>Gross margin</th>
+              <th>
+                <div class="row">
+                  <div class="col-sm-1">10%</div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="gross-margin-bar" aria-valuenow="10" aria-valuemin="10" aria-valuemax="100" style="color:black;"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-default" role="new-gross-margin-bar" aria-valuenow="10" aria-valuemin="10" aria-valuemax="100" style="color:black;"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">100%</div>
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>Operating profit</th>
+              <th>
+                <div class="row">
+                  <div class="col-sm-1">€0</div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="operating-profit-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="600000" style="color:black;"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-default" role="new-operating-profit-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="600000" style="color:black;"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">€600,000</div>
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>Market share men</th>
+              <th>
+                <div class="row">
+                  <div class="col-sm-1">0%</div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="market-share-men-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="20" style="color:black;"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-default" role="new-market-share-men-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="20" style="color:black;"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">20%</div>
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>Market share women</th>
+              <th>
+                <div class="row">
+                  <div class="col-sm-1">0%</div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="market-share-women-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="20" style="color:black;"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-default" role="new-market-share-women-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="20" style="color:black;"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">20%</div>
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>Brand awareness men</th>
+              <th>
+                <div class="row">
+                  <div class="col-sm-1">0%</div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="brand-awareness-men-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="color:black;"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-default" role="new-brand-awareness-men-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="color:black;"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">100%</div>
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>Brand awareness women</th>
+              <th>
+                <div class="row">
+                  <div class="col-sm-1">0%</div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="brand-awareness-women-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="color:black;"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-default" role="new-brand-awareness-women-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="color:black;"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">100%</div>
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>Brand image men</th>
+              <th>
+                <div class="row">
+                  <div class="col-sm-1">0%</div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="brand-image-men-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="color:black;"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-default" role="new-brand-image-men-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="color:black;"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">100%</div>
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>Brand image women</th>
+              <th>
+                <div class="row">
+                  <div class="col-sm-1">0%</div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="brand-image-women-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="color:black;"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-default" role="new-brand-image-women-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="color:black;"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">100%</div>
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>Brand loyalty men</th>
+              <th>
+                <div class="row">
+                  <div class="col-sm-1">0%</div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="brand-loyalty-men-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="50" style="color:black;"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-default" role="new-brand-loyalty-men-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="50" style="color:black;"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">50%</div>
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>Brand loyalty women</th>
+              <th>
+                <div class="row">
+                  <div class="col-sm-1">0%</div>
+                  <div class="col-sm-8">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="brand-loyalty-women-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="50" style="color:black;"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-default" role="new-brand-loyalty-women-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="50" style="color:black;"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">50%</div>
+                </div>
+              </th>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <div class="panel">
+        <div class="panel-heading">
+          <h1 class="text-uppercase">Score</h1>
+        </div>
+        <div class="panel-body">
+          <h2 id="new-score"></h2>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-heading">
+          <h1 class="text-uppercase">Leaderboard</h1>
+        </div>
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th class="col-sm-6">Name</th>
+                  <th class="col-sm-6">Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="bg-success" id="pos0n"></th>
+                  <th class="bg-success" id="pos0s"></th>
+                </tr>
+                <tr>
+                  <th class="bg-success" id="pos1n"></th>
+                  <th class="bg-success" id="pos1s"></th>
+                </tr>
+                <tr>
+                  <th class="bg-success" id="pos2n"></th>
+                  <th class="bg-success" id="pos2s"></th>
+                </tr>
+                <tr>
+                  <th id="pos3n"></th>
+                  <th id="pos3s"></th>
+                </tr>
+                <tr>
+                  <th id="pos4n"></th>
+                  <th id="pos4s"></th>
+                </tr>
+                <tr>
+                  <th id="pos5n"></th>
+                  <th id="pos5s"></th>
+                </tr>
+                <tr>
+                  <th id="pos6n"></th>
+                  <th id="pos6s"></th>
+                </tr>
+                <tr>
+                  <th id="pos7n"></th>
+                  <th id="pos7s"></th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-heading">
+          <h1 class="text-uppercase">Financial Results</h1>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th class="col-sm-3"></th>
+              <th class="col-sm-3">Total</th>
+              <th class="col-sm-3">Men</th>
+              <th class="col-sm-3">Women</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="bg-primary">Sales Revenue</th>
+              <th id="sales_revenue_total"></th>
+              <th id="sales_revenue_m"></th>
+              <th id="sales_revenue_f"></th>
+            </tr>
+
+            <tr>
+              <th class="bg-primary">Cost of Sales</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <th>Materials</th>
+              <th id="materials_total"></th>
+              <th id="materials_m"></th>
+              <th id="materials_f"></th>
+            </tr>
+
+            <tr>
+              <th>Manufacturing</th>
+              <th id="manufacturing_total"></th>
+              <th id="manufacturing_m"></th>
+              <th id="manufacturing_f"></th>
+            </tr>
+
+            <tr>
+              <th>Labelling/Supply</th>
+              <th>10000</th>
+              <th>5000</th>
+              <th>5000</th>
+            </tr>
+
+            <tr>
+              <th>Total</th>
+              <th id="total_cos_total"></th>
+              <th id="total_cos_men"></th>
+              <th id="total_cos_women"></th>
+            </tr>
+
+            <tr>
+              <th>Gross Profit</th>
+              <th id="gross_profit_total"></th>
+              <th id="gross_profit_men"></th>
+              <th id="gross_profit_women"></th>
+            </tr>
+
+            <tr>
+              <th class="bg-primary">Operating Expenses</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <th>Promotion</th>
+              <th>47000</th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <th>Advertising</th>
+              <th>7000</th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <th>Training</th>
+              <th id="training"></th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <th>Service & Technology</th>
+              <th id="service"></th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <th>Rent (Retail)</th>
+              <th id="rent"></th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <th>Online Shop</th>
+              <th id="online"></th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <th>Warehousing</th>
+              <th id="warehousing"></th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <th>Overheads</th>
+              <th>35000</th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <th>Total</th>
+              <th id="total_expenses"></th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <th class="bg-primary">Operating Profit</th>
+              <th id="operating_profit"></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
